@@ -87,20 +87,6 @@ The program attempts to change to the supplied directory using chdir() before re
 
 Once Shello is running, use the Action Menu commands to display directory entries, change directories, edit or execute files, run commands, sort entries, or quit the program.
 
-## Limitations
-
-* Commands are executed using `system()` rather than direct process management with `fork()` and `exec()`.
-* File editing depends on `nano` being installed.
-* Directory entries and input buffers use fixed maximum sizes.
-* Input validation and error handling could be expanded.
-
-## Possible Improvements
-
-* Replace `system()` with `fork()`, `exec()`, and `wait()`
-* Add pipes and input/output redirection
-* Add command history and additional built-in commands
-* Improve input validation and error handling
-
 ## What I Learned
 
 While building this project, I practiced:
